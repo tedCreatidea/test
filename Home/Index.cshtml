@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "".Toi18n();
+    //Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+
+<div class="index_layout">
+    <div class="boxes_item area_1st">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="areanf_cnt">
+                            @*<div class="idx_logo">
+                    <a href="@Url.Action("Detail", "Item", new {id = "LOGO"})"><img src="~/Images/Index/idx_logo.png" alt=""/></a>
+                </div>*@
+                            <div class="ticket_info">
+                                <a href="@Url.Action("Detail", "Item", new {id = "Ticket-information"})" title="Ticket information">
+
+                                    <div class="web">
+                                        <img src="~/Images/Index/ticket_web_en.png" alt="Super Early Bird NT$175, On Sale Now Till The End Of April, tickets are available via 7-ELEVEN ibon and GOMAJI " />
+                                    </div>
+                                    <div class="phone">
+                                        <img src="~/Images/Index/ticket_phone_en.png" alt="Super Early Bird, On Sale Now Till The End Of April, tickets are available via 7-ELEVEN ibon and  GOMAJI" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="areanf_cnt">
+                            @*<div class="idx_logo">
+                                    <a href="@Url.Action("Detail", "Item", new {id = "LOGO"})"><img src="~/Images/Index/idx_logo.png" alt=""/></a>
+                                </div>*@
+                            <div class="idx_area_info">
+                                <div class="aranf_bx1">
+                                    <div>
+                                        <a href="@Url.Action("Detail", "Item", new {id = "Introduction-to-the-Waipu-Park-Area"})" title="Introduction-to-the-Waipu-Park-Area"><img src="~/Images/Index/area_info_2n_en.png" alt="Waipu-Park-Area" /> </a>
+                                    </div>
+                                </div>
+                                <div class="aranf_bx2">
+                                    <div>
+                                       <a href="@Url.Action("Detail", "Item", new {id = "Houli-Horse-Ranch--Forest-Park-Area"})" title="Houli-Horse-Ranch--Forest-Park-Area"><img src="~/Images/Index/area_info_1n_en.png" alt="Houli-Horse-Ranch--Forest-Park-Area" /></a>
+                                    </div>
+                                </div>
+                                <div class="aranf_bx3">
+                                    <div>
+                                        <a href="@Url.Action("Detail", "Item", new {id = "Introduction-to-the-Huludun-Park"})" title="Introduction-to-the-Huludun-Park"><img src="~/Images/Index/area_info_3n_en.png" alt="Huludun-Park" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxes_item area_3rd">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="idxnws_bx">
+                            <div class="area3rd_ttl areaitems_ttl">
+                                <img src="~/Images/Index/area3rd_ttl_en.png" alt="Information" />
+                            </div>
+
+                            <div class="idxnws_reborn_box">
+                                <div>
+                                    <div class="idxnws_rblft_box">
+                                        @*<div class="idxnws_rblft_banner">@Html.Action("CategoryItemsLink", "Partial", new { id = "Information-1", viewName = "NewsInformationIndex" })</div>*@
+                                        @*<div class="idxnws_rblft_news">@Html.Action("CategoryItemsLink", "Partial", new { id = "Information", viewName = "NewsIndex" })</div>*@
+                                        <div class="idxnws_rblft_news">@Html.Action("NewsMixPartial", "Partial", new { id = "News", viewName = "NewsMixIndex" })</div>
+                                    </div>
+                                    <div class="idxnws_rbrgt_box">
+                                        <div class="idxnws_rbrgt_news">
+                                            @*@Html.Action("CategoryItemsLink", "Partial", new { id = "Information", viewName = "NewsTopIndex" })*@
+                                            <div class="idxnws_rblft_news">@Html.Action("NewsMixPartial", "Partial", new { id = "News", viewName = "NewsMixTopIndex" })</div>
+                                        </div>
+                                        <div class="idxnws_rbrgt_more">
+                                            <div class="idxnws_more_box">@Html.ActionLink("more", "News", "Category")</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxes_item area_2nd">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="idxbnr_box">
+                            <div class="ara2_sldrfb_box">
+                                <div class="idxbnr_lft"><img src="~/Images/Index/idxbnr_lft_replace.png" alt="" /></div>
+                                <div id="idx_bnrsldr_box">
+                                    @Html.Action("Banner", "Partial", new { id = "活動Banner", viewName = "BannerActive" })
+                                </div>
+                                <div class="idxbnr_rgt"><img src="~/Images/Index/idxbnr_rgt_replace.png" alt="" /></div>
+                                @*<div class="idxbnr_bot"><img src="~/Images/Index/idxbnr_bot.png" alt="" /></div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="boxes_item area_4th">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="areaitem_cnt">
+                            <div class="area4th_box">
+                                <a href="@Url.Action("Detail","Item", new {id="Theme_of_the_Flora_Expo"})" title="Theme_of_the_Flora_Expo">
+                                    <div class="area4th_ttl">
+                                        <span class="fntlrg">Have you </span><span>ever imagined the </span><span class="fntlrg"> sound </span><span> of </span><span class="fntlrg">blooming</span><span>?</span>
+                                    </div>
+                                    <div class="area4th_cnt">
+                                        <p>People nowadays are busy working, which not only exhausts them, but also blinds their minds. At the same time, “happiness” is like the silence of blooming. We miss its beautiful blooming period accidentally due to our busy life. We may have richer lives, but our minds and souls are being emptied.</p>
+                                        <p>For a long time, people have tended to emphasize economic effects and have overlooked the environmental damage we have caused. On one hand, we have damaged the environment to pursue development. On the other hand, we felt helpless and anxious about it. Therefore, with the holding of 2018 Taichung World Flora Exposition, we invite citizens to reflect on the intimate relationship between humanity and Mother Nature and listen carefully to the messages conveyed by Mother Nature.</p>
+                                    </div>
+                                </a>
+                                <div class="area4th_more">
+                                    <a href="@Url.Action("Detail", "Item", new {id = "Theme_of_the_Flora_Expo"})" title="Theme_of_the_Flora_Expo">Learn more about the Taichung World Flora Expo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*腰帶*@
+    <div class="mid_space_box">@Html.Partial("LayoutPartial_MiddleSpace")</div>
+    <div class="boxes_item area_8th">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="areaitem_cnt">
+                            <div class="area8th_box">
+                                <div class="area8th_ttl areaitems_ttl"><img src="~/Images/Index/area8th_ttl.png" alt="Promotional Videos" /></div>
+                                <div class="area8th_cnt">@Html.Action("VideoCategoryItemsListDetail", "Partial", new { id = "Promotional-Videos", pageSize = 5, hasAllwaysOnTop = true, viewName = "_Video" })</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<div class="boxes_item area_9th">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="areaitem_cnt">
+                            <div class="area9th_box">
+                                <div class="area9_ttl">
+                                    <a href="@Url.Action("Detail", "Item" , new {id="About-Taichung"})">
+                                        <img src="~/Images/Index/area9_ttl.png" alt="交通旅遊" />
+                                    </a>
+                                </div>
+                                <div class="area9_cnt">
+                                    <div class="area9_circle">
+                                        <div class="valign_middle"></div>
+                                        <div>
+                                            <div class="area9_plane"><img src="~/Images/Index/area9_plane.png" alt="" /></div>
+                                            <div class="mobile_only_txt"><img src="~/Images/Index/mobile_txt_about_taichung.png" alt="About Taichung" /></div>
+                                            <div class="area9_list_box">
+                                                <ul class="area9_list">
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Item",new {id="Introduction-of-Taic"})" alt="Introduction of Taichung City">
+                                                            <img src="~/Images/Index/taichung1_poto.png" alt=""/><p>Introduction of Taichung City</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Item",new {id="Must-eat-foods"})" alt="Must-eat foods">
+                                                            <img src="~/Images/Index/taichung2_poto.png"  alt=""/><p>Must-eat foods</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Item",new {id="Business"})">
+                                                            <img src="~/Images/Index/taichung3_poto.png" alt="Bussiness" /><p>Bussiness</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="@Url.Action("Detail", "Item",new {id="Tourist-Attractions-"})">
+                                                            <img src="~/Images/Index/taichung4_poto.png" alt="Top 10 Must Go" /><p>Top 10 Must Go</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="area9_people"><img src="~/Images/Index/area9_people.png" alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+    <div class="boxes_item area_10th">
+        <div class="spec_bg">
+            <div>
+                <div>
+                    <div>
+                        <div class="areaitem_cnt">
+                            <div class="area10_links_box">
+                                @*<div class="area10th_ttl areaitems_ttl"><img src="~/Images/Index/area10th_ttl.png" alt="資訊連結" /></div>*@
+                                <div class="idxptlst_bot">
+                                    @Html.Action("Banner", "Partial", new { id = "資訊連結", viewName = "BannerInfoLink" })
+                                    @*<ul>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/10.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/5.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/3.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/12.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/8.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/1.jpg" alt=""/></a></li>
+                                            <li><a href="#"><img src="~/Images/Index/Temp/6.jpg" alt=""/></a></li>
+                                        </ul>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
